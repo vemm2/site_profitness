@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+#mudar{
+    
+    
+}
+h1{
+    font-family: 'Fugaz One', cursive;
+    padding-top: 35vh;
+    color:white;
+    font-size: 5vw;
+    letter-spacing:0rem;
+    
+    padding-right: 0rem;
+    text-align: left;
+    padding-left: 10rem;
+    padding-top: 20rem;
+}
+
+#teste1{
+    font-family: 'Fugaz One', cursive;
+    padding-top: 35vh;
+    color:white;
+    font-size: 6vw;
+    letter-spacing:0rem;
+    
+    padding-top: 0rem;
+    color:coral;
+    
+    
+}
+#teste1:before{
+    content:"SAÚDE.";
+    animation: topToBottom 7s infinite 0s;
+}
+@keyframes topToBottom {
+    
+    10%{content:"SAÚDE.";
+        from{
+            transform: rotateX(0deg);
+        } to{
+            transform: rotateX(90deg);
+        }}
+    25%{content:"AUTO-ESTIMA.";}
+    75%{content:"FORÇA.";}
+    100%{content:"COSIA."}
+}
+*{margin:0;}
+html{
+    scroll-behavior: smooth;
+
+    
+}
+
+.navbar{
+    display: flex;
+    background-color: rgb(19, 19, 19);
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    position: fixed;
+    width: 100%;
+    font-size: 1.5rem;
+    box-shadow: black;
+    
+    
+}
+.navbar ul{
+    display:flex;
+    gap: 3.5rem;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    
+    
+    
+}
+.navbar ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+}
+/*nav ul li a{
+    color:white;
+    text-decoration: none;
+    
+    
+}*/
+
+
+
+section{
+    min-height: 100vh;
+    padding-top: 3rem;
+}
+
+#home{
+    background-image: url(academia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh
+}
+#sobre{
+    background-image: url(empresa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh
+    
+}
+#servicos{
+    background-image: url(academia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh
+}
+#contato{
+    background-image: url(academia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh
