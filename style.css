@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
-*{
+
+
+@media only screen and (min-width: 601px){}
+body{
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
+
 
 #retangulos{
     display: flex;
@@ -24,42 +30,44 @@ h1{
     font-family: 'Fugaz One', cursive;
     padding-top: 35vh;
     color:white;
-    font-size: 7rem;
+    font-size: 6vw;
     letter-spacing:0rem;
     
     padding-right: 0rem;
     text-align: left;
     padding-left: 5rem;
     padding-top: 15rem;
+    
+}
+
+h1 span{
+    transform: rotateY(360deg);
 }
 
 #teste1{
     font-family: 'Fugaz One', cursive;
     padding-top: 8rem;
     color:white;
-    font-size: 7vw;
+    font-size: 9vw;
     letter-spacing:0rem;
     
     padding-top: 0rem;
-    color:coral;
+    color:#009767;
+    
     
     
 }
-#teste1:before{
-    content:"SAÚDE.";
+#teste1:after{
+    content:"SAÚDE";
     animation: topToBottom 7s infinite 0s;
+    
 }
 @keyframes topToBottom {
     
-    10%{content:"SAÚDE.";
-        from{
-            transform: rotateX(0deg);
-        } to{
-            transform: rotateX(90deg);
-        }}
-    25%{content:"FOCO.";}
-    75%{content:"FORÇA.";}
-    100%{content:"DISCIPLINA."}
+    15%{content:"SAÚDE";}  
+    25%{content:"FORÇA";}
+    75%{content:"DISCIPLINA";}
+    100%{content:"FOCO";}
 }
 *{margin:0;}
 html{
@@ -71,15 +79,18 @@ html{
     background-color: #009767;
     
     border-radius: 3rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+#botao:hover{
+    filter: brightness(1.2);
 }
 .navbar{
     display: flex;
-    background-color: rgb(19, 19, 19);
+    /*background-color: rgb(19, 19, 19);*/
     justify-content: space-around;
-    align-items: center;
+    align-items:flex-end;
     padding-left: 1rem;
-    padding-right: 2rem;
+    padding-right: 0rem;
     position: fixed;
     width: 100%;
     height: ;
@@ -102,14 +113,18 @@ html{
 }
 .navbar ul a{
     text-decoration: none;
-    color: white;
+    color: rgb(228, 226, 226);
     font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
-   
-    
+    font-family: 'Roboto', sans-serif;  
     
 }
-
+.navbar ul a:hover{
+   filter: brightness(1.2);
+     
+}
+#logo:hover{
+    filter: brightness(1.2);
+}
 
 }
 
@@ -126,23 +141,163 @@ section{
     height: 100vh;
 }
 #sobre{
-    background-image: url(empresa.jpg);
+    background-image: url(academia.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 100vh
     
 }
-#servicos{
-    background-image: url(academia.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh
-}
-#contato{
-    background-image: url(academia.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        overflow:visible;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+   
+    .teste_fundo{
+        background-color: rgb(255, 255, 255);
+        margin-left: 13%;
+        margin-top: 10.5vh;
+        height: 40vh;
+        width: 15%;
+        border-radius: 2.25rem 2.25rem 0rem 0rem;
+        }
+    
+    h1{
+        font-family: 'Fugaz One', cursive;
+        padding-top: 35vh;
+        color:white;
+        font-size: 10vw;
+        letter-spacing:0rem;
+        
+        padding-right: 0rem;
+        text-align: CENTER;
+        padding-left: 0rem;
+        padding-top: 10rem;
+        
+    }
+    
+    h1 span{
+        transform: rotateY(360deg);
+    }
+    #botao{
+        
+    }
+    
+    #teste1{
+        font-family: 'Fugaz One', cursive;
+        padding-top: 8rem;
+        color:white;
+        font-size: 12vw;
+        letter-spacing:0rem;
+        
+        padding-top: 0rem;
+        color:#009767;
+        
+        
+        
+    }
+    #teste1:after{
+        content:"SAÚDE";
+        animation: topToBottom 7s infinite 0s;
+        
+    }
+    @keyframes topToBottom {
+        
+        15%{content:"SAÚDE";}  
+        25%{content:"FORÇA";}
+        75%{content:"DISCIPLINA";}
+        100%{content:"FOCO";}
+    }
+    *{margin:0;}
+    html{
+        scroll-behavior: smooth;
+    
+        
+    }
+    #botao{
+        background-color: #009767;
+        text-align: left;
+        align-items: left;
+        border-radius: 3rem;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    #botao:hover{
+        filter: brightness(1.2);
+    }
+    .navbar{
+        display: flex;
+        /*background-color: rgb(19, 19, 19);*/
+        justify-content: space-around;
+        align-items:flex-end;
+        padding-left: 1rem;
+        padding-right: 0rem;
+        position: fixed;
+        width: 100%;
+        height: ;
+        font-size: 1.5rem;
+        box-shadow: black;
+        
+        
+    }
+    .navbar ul{
+        display:none;
+        gap: 3.5rem;
+        text-align: center;
+        justify-content: center;
+        list-style: none;
+        height: 4rem;
+        
+        
+        
+        
+    }
+    .navbar ul a{
+        text-decoration: none;
+        color: rgb(228, 226, 226);
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;  
+        
+    }
+    .navbar ul a:hover{
+       filter: brightness(1.2);
+         
+    }
+    #logo:hover{
+        filter: brightness(1.2);
+    }
+    
+    }
+    
+    section{
+        min-height: 100vh;
+        padding-top: rem;
+    }
+    
+    #home{
+        background-image: url(academia.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+    }
+    #sobre{
+        background-image: url(academia.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh
+        
+    }
+    #logo{
+        align-items: center;
+    }
+  }
